@@ -1,0 +1,130 @@
+<script setup lang="ts">
+import { computed, ref } from 'vue'
+import ButtonMenu from '../ui/ButtonMenu.vue'
+import type { InfoIconRow } from '../../types'
+import getIcon from '../../utils/getIcon'
+
+const props = defineProps<{
+	icon: InfoIconRow,
+	popoverPosition?: 'top'|'bottom'
+}>()
+
+const isActionComplete = ref(false)
+
+const componentName = computed(() =>
+{
+	return props.icon.code
+})
+
+function toUpperFirstChar(value: string): string
+{
+	return value.charAt(0).toUpperCase() + value.slice(1)
+}
+
+// region Action ////
+function success()
+{
+	isActionComplete.value = true;
+	window.setTimeout(() => {
+		isActionComplete.value = false;
+	}, 1_000)
+}
+
+function getIconFullName(): string
+{
+	return `#type#::#icon#`
+		.replace('#icon#', props.icon.icon)
+		.replace('#type#', toUpperFirstChar(props.icon.type))
+}
+
+function copyComponentName()
+{
+	const code = getIconFullName()
+	
+	navigator.clipboard.writeText(code)
+	
+	success()
+}
+
+function copyVue()
+{
+	const attrs = ['']
+	
+	attrs.push('class="w-3 h-3"')
+	
+	const code = [
+		`import #icon# from '@bitrix24/b24icons-vue/#type#/#icon#'`,
+		``,
+		`<#icon#${attrs.join(' ')} />`
+	].join("\n")
+	.replace('#icon#', props.icon.icon)
+	.replace('#icon#', props.icon.icon)
+	.replace('#icon#', props.icon.icon)
+	.replace('#type#', props.icon.type)
+	
+	navigator.clipboard.writeText(code)
+	
+	success()
+}
+
+function copyVueB24Icon()
+{
+	const attrs = ['']
+	
+	attrs.push(`name="${getIconFullName()}"`)
+	attrs.push('class="w-3 h-3"')
+	
+	const code = [
+		`import { B24Icon } from '@bitrix24/b24icons-vue'`,
+		``,
+		`<B24Icon${attrs.join(' ')} />`
+	].join("\n")
+	
+	navigator.clipboard.writeText(code)
+	
+	success()
+}
+
+function copySVG()
+{
+	const svgString = getIcon(componentName.value)
+	
+	navigator.clipboard.writeText(svgString)
+	
+	success()
+}
+
+function copyDataUrl()
+{
+	const svgString = getIcon(componentName.value)
+	
+	// Create SVG data url
+	const dataUrl = `data:image/svg+xml;base64,${btoa(svgString)}`
+	navigator.clipboard.writeText(dataUrl)
+	
+	success()
+}
+
+// endregion ////
+
+const options = ref([
+	{ text: 'Copy Name' , onClick: copyComponentName },
+	{ text: 'Copy via Vue Component' , onClick: copyVue },
+	{ text: 'Copy via Vue B24Icon' , onClick: copyVueB24Icon },
+	{ text: 'Copy SVG' , onClick: copySVG },
+	{ text: 'Copy Data URL' , onClick: copyDataUrl },
+]);
+
+</script>
+
+<template>
+	<ButtonMenu
+		:class="[
+			isActionComplete ? 'text-accent-green' : ''
+		]"
+		id="action-button"
+		callOptionOnClick
+		:popoverPosition="popoverPosition"
+		:options="options"
+	/>
+</template>
