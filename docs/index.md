@@ -3,25 +3,24 @@ layout: home
 
 hero:
   name: "@bitrix24/b24icons"
-  text: "Bitrix24 Icons for Web Applications"
-  tagline: 'Design your applications in the Bitrix24 style'
+  text: "Иконки Битрикс24 для веб-приложений"
+  tagline: 'Создавайте приложения в стиле Битрикс24'
   actions:
     - theme: brand
-      text: View all icons
+      text: Просмотреть все иконки
       link: /guide/icons
     - theme: alt
-      text: Quickstart
+      text: Быстрый старт
       link: /guide/getting-started
     - theme: alt
       text: GitHub
-      link: https://github.com/bitrix24/b24icons
+      link: [URL]https://github.com/bitrix-tools/b24icons[/URL]
 
 features:
-  - title: All Icons in One Place
-    details: The library provides a full set of Bitrix24 SVG icons for easy and convenient use.
-  - title: Smart Icon Loading
-    details: The B24Icon component optimizes icon loading by utilizing dynamic imports while preserving tree-shaking.
-  - title: Tree-shaking support
-    details: The icons are optimized for tree-shaking, enabling you to import only what you need.
+  - title: Все иконки в одном месте
+    details: Полный набор SVG-иконок Битрикс24 для легкого и удобного использования.
+  - title: Умная загрузка иконок
+    details: Компонент B24Icon оптимизирует загрузку иконок, используя динамический импорт.
+  - title: Поддержка tree-shaking
+    details: Иконки оптимизированы для tree-shaking, что позволяет импортировать только то, что вам нужно.
 ---
-

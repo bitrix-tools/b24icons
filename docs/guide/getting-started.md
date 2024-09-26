@@ -1,10 +1,10 @@
-# Getting Started {#getting-started}
+# Быстрый старт {#getting-started}
 
-The library contains SVG icons for Bitrix24.
+Библиотека содержит SVG-иконки для Битрикс24.
 
 ## Vue {#installation-vue}
 
-Install `@bitrix24/b24icons-vue` via `npm`:
+Установите `@bitrix24/b24icons-vue` через `npm`:
 
 ::: code-group
 ```sh [npm]
@@ -12,4 +12,4 @@ $ npm i @bitrix24/b24icons-vue
 ```
 :::
 
-Read more about the library in the [documentation](/guide/vue).
+Подробнее о библиотеке читайте в [документации](/guide/vue).

@@ -1,5 +1,5 @@
 # @bitrix24/b24icons
 
-The library contains SVG icons for use in the interfaces of both local and mass-market applications for Bitrix24. 
+Библиотека содержит SVG-иконки для использования в интерфейсах как локальных, так и массовых приложений для Bitrix24.
 
-Find more details in the [documentation](https://bitrix-tools.github.io/b24icons/)
+Более подробную информацию можно найти в [документации](https://bitrix-tools.github.io/b24icons/)

@@ -1,5 +1,7 @@
 ---
+
 ---
+
 <script setup>
 import { B24Icon } from '@bitrix24/b24icons-vue';
 import Bitrix24Icon from '@bitrix24/b24icons-vue/common-service/Bitrix24Icon';
@@ -10,10 +12,11 @@ const configParams = __SH_BASE__;
 
 # Vue
 
-`@bitrix24/b24icons-vue` library for [Vue 3](https://vuejs.org/).
+Библиотека `@bitrix24/b24icons-vue` для [Vue 3]([URL]https://vuejs.org/[/URL]).
 
-## Installation {#installation}
-Install via `npm`.
+## Установка {#installation}
+
+Установите через `npm`.
 
 ::: code-group
 ```sh [npm]
@@ -21,13 +24,13 @@ $ npm i @bitrix24/b24icons-vue
 ```
 :::
 
-## Usage {#usage}
+## Использование {#usage}
 
-The package supports [ECMAScript](https://tc39.github.io/ecma262/#sec-modules) and `tree-shaking`.
+Пакет поддерживает [ECMAScript]([URL]https://tc39.github.io/ecma262/#sec-modules[/URL]) и `tree-shaking`.
 
-Import icons as Vue-components. Only used icons are included in the build.
+Импортируйте иконки как Vue-компоненты. В сборку включаются только используемые иконки.
 
-### Example {#example}
+### Пример {#example}
 
 <Example>
 	<div class="grid grid-cols-1 gap-x-10 gap-y-8 place-items-center">
@@ -39,7 +42,6 @@ Import icons as Vue-components. Only used icons are included in the build.
 		</div>
 	</div>
 </Example>
-
 
 ::: code-group
 ```vue{2,7} [SomeComponent.vue]
@@ -55,14 +57,15 @@ import Bitrix24Icon from '@bitrix24/b24icons-vue/common-service/Bitrix24Icon'
 ```
 :::
 
-## Generic Icon Component {#generic-icon-component}
-Use the <a :href="`${configParams.github}/blob/main/packages/@bitrix24-icons-vue/src/components/B24Icon.ts`" target="_blank" rel="noreferrer">B24Icon</a> component for easy access to icons.
+## Универсальный компонент иконок {#generic-icon-component}
 
-The component uses dynamic imports via `import()` to load icons as needed.
+Используйте компонент <a :href="`${configParams.github}/blob/main/packages/@bitrix24-icons-vue/src/components/B24Icon.ts`" target="_blank" rel="noreferrer">B24Icon</a> для удобного доступа к иконкам.
 
-This does not break the `tree-shaking` principle because `tree-shaking` works with static imports, while dynamic imports are used for load optimization, loading only the necessary parts of the code when they are needed.
+Компонент использует динамический импорт через `import()` для загрузки иконок по мере необходимости.
 
-> Specify the full icon name with the `name` parameter, e.g., `Main::CopilotAiIcon`.
+Это не нарушает принцип `tree-shaking`, так как `tree-shaking` работает со статическим импортом, а динамическиё импорт используется для оптимизации загрузки, когда загружаются только необходимые части кода.
+
+> Укажите полное имя иконки с помощью параметра `name`, например, `Main::CopilotAiIcon`.
 
 <Example>
 	<div class="grid grid-cols-1 sm:grid-cols-3 gap-x-10 gap-y-8 place-items-center">
@@ -105,4 +108,3 @@ import { B24Icon } from '@bitrix24/b24icons-vue'
 	</div>
 </template>
 ```
-:::

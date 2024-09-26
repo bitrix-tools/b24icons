@@ -1,8 +1,8 @@
 ---
-title: Icons
+title: Иконки
 layout: page
 outline: 2
-outlineTitle: Categories
+outlineTitle: Категории
 sidebar: true
 ---
 
