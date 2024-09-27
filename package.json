@@ -23,18 +23,14 @@
 	},
 	"type": "module",
 	"private": true,
-	"workspaces": [
-		"packages/*"
-	],
 	"scripts": {
 		"docs:dev": "vitepress dev docs",
-		
 		"docs:build": "vitepress build docs",
 		"docs:preview": "vitepress preview docs"
 	},
 	"devDependencies": {
-		"@tailwindcss/forms": "^0.5.7",
 		"@bitrix24/b24style": "^0.1.1",
+		"@tailwindcss/forms": "^0.5.7",
 		"autoprefixer": "^10.4.20",
 		"mini-svg-data-uri": "^1.4.4",
 		"postcss": "^8.4.47",
@@ -47,8 +43,8 @@
 	},
 	"dependencies": {
 		"@bitrix24/b24icons-vue": "^0.1.0",
-		"@vueuse/core": "^11.1.0",
 		"@headlessui/vue": "^1.7.23",
+		"@vueuse/core": "^11.1.0",
 		"fuse.js": "^7"
 	}
 }
