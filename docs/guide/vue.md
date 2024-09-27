@@ -108,3 +108,4 @@ import { B24Icon } from '@bitrix24/b24icons-vue'
 	</div>
 </template>
 ```
+:::
