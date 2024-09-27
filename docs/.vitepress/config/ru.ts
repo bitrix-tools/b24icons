@@ -13,7 +13,7 @@ export const ru = defineConfig({
 		},
 		
 		editLink: {
-			pattern: 'https://github.com/bitrix24/b24icons/edit/main/docs/:path',
+			pattern: 'https://github.com/bitrix-tools/b24icons/edit/main/docs/:path',
 			text: 'Редактировать страницу'
 		},
 		
