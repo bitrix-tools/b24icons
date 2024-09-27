@@ -34,7 +34,7 @@ function nav(): DefaultTheme.NavItem[] {
 			items: [
 				{
 					text: 'Changelog',
-					link: `https://github.com/bitrix24/b24icons/blob/main/CHANGELOG.md`
+					link: `https://github.com/bitrix-tools/b24icons/blob/main/CHANGELOG.md`
 				},
 				... configParams.relative
 			]
