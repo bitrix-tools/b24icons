@@ -12,7 +12,7 @@ const configParams = __SH_BASE__;
 
 # Vue
 
-Библиотека `@bitrix24/b24icons-vue` для [Vue 3]([URL]https://vuejs.org/[/URL]).
+Библиотека `@bitrix24/b24icons-vue` для [Vue 3](https://vuejs.org/).
 
 ## Установка {#installation}
 
@@ -26,7 +26,7 @@ $ npm i @bitrix24/b24icons-vue
 
 ## Использование {#usage}
 
-Пакет поддерживает [ECMAScript]([URL]https://tc39.github.io/ecma262/#sec-modules[/URL]) и `tree-shaking`.
+Пакет поддерживает [ECMAScript](https://tc39.github.io/ecma262/#sec-modules) и `tree-shaking`.
 
 Импортируйте иконки как Vue-компоненты. В сборку включаются только используемые иконки.
 
