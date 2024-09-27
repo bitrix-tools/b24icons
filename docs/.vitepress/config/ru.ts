@@ -21,6 +21,24 @@ export const ru = defineConfig({
 			message: 'Опубликовано под лицензией MIT.',
 			copyright: 'Copyright © 2024 – настоящее время Bitrix24'
 		},
+		
+		outline: { label: 'Содержание страницы' },
+		
+		docFooter: {
+			prev: 'Предыдущая страница',
+			next: 'Следующая страница'
+		},
+		
+		lastUpdated: {
+			text: 'Обновлено'
+		},
+		
+		darkModeSwitchLabel: 'Оформление',
+		lightModeSwitchTitle: 'Переключить на светлую тему',
+		darkModeSwitchTitle: 'Переключить на тёмную тему',
+		sidebarMenuLabel: 'Меню',
+		returnToTopLabel: 'Вернуться к началу',
+		langMenuLabel: 'Изменить язык'
 	}
 })
 
