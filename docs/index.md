@@ -14,7 +14,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: GitHub
-      link: [URL]https://github.com/bitrix-tools/b24icons[/URL]
+      link: [URL]https://github.com/bitrix24/b24icons[/URL]
 
 features:
   - title: Все иконки в одном месте
