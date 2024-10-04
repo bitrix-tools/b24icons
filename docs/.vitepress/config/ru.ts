@@ -19,7 +19,7 @@ export const ru = defineConfig({
 		
 		footer: {
 			message: 'Опубликовано под лицензией MIT.',
-			copyright: 'Copyright © 2024 – настоящее время Bitrix24'
+			copyright: 'Copyright © 2024 – настоящее время Битрикс'
 		},
 		
 		outline: { label: 'Содержание страницы' },
