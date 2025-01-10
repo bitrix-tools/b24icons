@@ -59,7 +59,7 @@ import Bitrix24Icon from '@bitrix24/b24icons-vue/common-service/Bitrix24Icon'
 
 ## Универсальный компонент иконок {#generic-icon-component}
 
-Используйте компонент <a :href="`${configParams.github}/blob/main/packages/@bitrix24-icons-vue/src/components/B24Icon.ts`" target="_blank" rel="noreferrer">B24Icon</a> для удобного доступа к иконкам.
+Используйте компонент <a :href="`https://github.com/bitrix24/b24icons/blob/main/packages/@bitrix24-icons-vue/src/components/B24Icon.ts`" target="_blank" rel="noreferrer">B24Icon</a> для удобного доступа к иконкам.
 
 Компонент использует динамический импорт через `import()` для загрузки иконок по мере необходимости.
 
