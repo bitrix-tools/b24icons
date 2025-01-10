@@ -5,8 +5,8 @@
 	"description": "",
 	"type": "module",
 	"dependencies": {
-		"@bitrix24/b24icons-vue": "^0.1.1",
-		"@vueuse/core": "^11.1.0",
+		"@bitrix24/b24icons-vue": "^1.0.3",
+		"@vueuse/core": "^12.3.0",
 		"fuse.js": "^7"
 	}
 }
