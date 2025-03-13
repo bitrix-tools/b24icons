@@ -1,6 +1,6 @@
 {
 	"name": "@bitrix24/b24icons",
-	"version": "1.0.3",
+	"version": "1.0.5",
 	"author": "Bitrix",
 	"license": "MIT",
 	"description": "Документация: Битрикс24 SVG иконки для разработки веб-приложений",
@@ -29,7 +29,7 @@
 		"docs:preview": "vitepress preview docs"
 	},
 	"devDependencies": {
-		"@bitrix24/b24style": "^0.1.2",
+		"@bitrix24/b24style": "^1.0.1",
 		"@tailwindcss/forms": "^0.5.7",
 		"autoprefixer": "^10.4.20",
 		"mini-svg-data-uri": "^1.4.4",
@@ -42,7 +42,7 @@
 		"vue-router": "^4.5.0"
 	},
 	"dependencies": {
-		"@bitrix24/b24icons-vue": "^1.0.3",
+		"@bitrix24/b24icons-vue": "^1.0.5",
 		"@headlessui/vue": "^1.7.23",
 		"@vueuse/core": "^12.3.0",
 		"fuse.js": "^7"
