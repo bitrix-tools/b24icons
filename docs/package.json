@@ -5,8 +5,11 @@
   "description": "",
   "type": "module",
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "tailwindcss": "^4.1.4",
     "vue-router": "^4.5.1",
-    "vitepress": "^2.0.0-alpha.5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@bitrix24/b24icons-vue": "^2.0.1",

@@ -1,8 +1,6 @@
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vitepress'
 import { configParams } from './params'
-import path from 'path'
-import pc from 'picocolors'
 import tailwindcss from '@tailwindcss/vite'
 import bitrix24UIPluginVite from '@bitrix24/b24ui-nuxt/vite'
 

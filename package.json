@@ -1,6 +1,6 @@
 {
   "name": "@bitrix24/b24icons",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Bitrix",
   "license": "MIT",
   "description": "Документация: Битрикс24 SVG иконки для разработки веб-приложений",
@@ -10,6 +10,7 @@
     "icons",
     "svg"
   ],
+  "packageManager": "pnpm@10.11.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bitrix-tools/b24icons.git"
@@ -23,19 +24,15 @@
   },
   "type": "module",
   "private": true,
-  "workspaces": [
-    "docs"
-  ],
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "mini-svg-data-uri": "^1.4.4",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "vitepress": "^2.0.0-alpha.5"
   },
-  "dependencies": {
+  "resolutions": {
+    "@bitrix24/b24icons-vue": "2.0.2"
   }
 }

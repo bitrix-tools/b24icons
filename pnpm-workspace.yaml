@@ -1,0 +1,7 @@
+packages:
+  - docs
+ignoredBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - vue-demi
+onlyBuiltDependencies:
+  - esbuild
