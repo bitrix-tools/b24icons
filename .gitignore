@@ -1,6 +1,14 @@
 # dependencies
 /node_modules
-docs/node_modules
+/docs/node_modules
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
 
 # testing
 /coverage
@@ -17,25 +25,21 @@ yarn-error.log*
 .idea
 .DS_Store
 *.pem
-.cache
 Thumbs.db
 /@tmp
 
 # production
-docs/.vitepress/dist
-docs/.vitepress/cache
 docs/auto-imports.d.ts
 docs/components.d.ts
+docs/.output
+docs/.nuxt
+docs/.data
+docs/dist
+
+/src/backup
 
 # TypeScript
 *.tsbuildinfo
 
 # local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
-/packages/@bitrix24-icons-vue/
+.env

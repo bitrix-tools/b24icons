@@ -1,0 +1,14 @@
+title: 'Bitrix24 Icons'
+description: Иконки Битрикс24 для веб-приложений - Создавайте приложения в стиле Битрикс24
+hero:
+  title: '@bitrix24/b24icons'
+  description: Создавайте приложения в стиле Битрикс24
+  links:
+    - label: Начать
+      to: /docs/getting-started/installation/vue/
+      color: 'air-secondary-accent-2'
+      iconName: 'PlayLIcon'
+    - label: Изучить иконки
+      to: /icons/
+      color: 'air-primary'
+      iconName: 'DemonstrationOnIcon'
