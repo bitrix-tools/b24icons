@@ -117,7 +117,7 @@ const iconFromIconName = (iconName?: string) => {
         </PageHeader>
       </template>
     </template>
-    <template #right>
+    <template v-if="page?.body?.toc?.links?.length" #right>
       <B24Card
         variant="outline-alt"
         class="lg:mt-[22px] lg:sticky lg:top-[8px] rounded-none lg:rounded-(--ui-border-radius-md) backdrop-blur-md border-0"
