@@ -23,9 +23,9 @@ importers:
 
   docs:
     dependencies:
-      '@bitrix24/b24icons-vue':
-        specifier: ^2.0.6
-        version: 2.0.6(vue@3.5.24(typescript@5.9.3))
+      '@bitrix24/b24icons-nuxt':
+        specifier: ^2.0.7
+        version: 2.0.7(magicast@0.5.1)(vue@3.5.24(typescript@5.9.3))
       '@bitrix24/b24ui-nuxt':
         specifier: ^2.1.1
         version: 2.1.1(@babel/parser@7.28.5)(change-case@5.4.4)(embla-carousel@8.6.0)(joi@18.0.1)(magicast@0.5.1)(sortablejs@1.15.6)(superstruct@2.0.2)(typescript@5.9.3)(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.1)(yaml@2.8.1))(vue-router@4.6.3(vue@3.5.24(typescript@5.9.3)))(vue@3.5.24(typescript@5.9.3))(zod@4.1.12)
@@ -227,8 +227,16 @@ packages:
   '@barbapapazes/plausible-tracker@0.5.6':
     resolution: {integrity: sha512-GRZxn3ZngYQ1+QbdP8d66D/lQg+T2oEevG8kBGfNwVbt9VZB67sgMx/gkRo/Ww2lH7QelgjUNzvOeG+DsJX2HQ==}
 
+  '@bitrix24/b24icons-nuxt@2.0.7':
+    resolution: {integrity: sha512-hoGtDi4BM9B8oqwVpaH2XIWLI8Q8c/d7968OC4t0Mucn/2pHWikwLHaqivaJ4uIIlUyJL3CDsRU2e6m5Zx4oBA==}
+
   '@bitrix24/b24icons-vue@2.0.6':
     resolution: {integrity: sha512-0rp90RL2n/4nJHlQrqTUeoUuVqdBWD2rjET2N/9sOaZlCoCyqSz/NPU3LiNkcESsLH4ZE1uRYAQmCOChDl4HaA==}
+    peerDependencies:
+      vue: ^3.5.24
+
+  '@bitrix24/b24icons-vue@2.0.7':
+    resolution: {integrity: sha512-3IOY6EEiCpcfGTkbfK8Mys8/aGYEjkF1AlehxHo37THDcZnVszyRjqj/KuvxU5sPhJV9/LHcD5RIRx78D3aCiw==}
     peerDependencies:
       vue: ^3.5.24
 
@@ -5488,7 +5496,19 @@ snapshots:
 
   '@barbapapazes/plausible-tracker@0.5.6': {}
 
+  '@bitrix24/b24icons-nuxt@2.0.7(magicast@0.5.1)(vue@3.5.24(typescript@5.9.3))':
+    dependencies:
+      '@bitrix24/b24icons-vue': 2.0.7(vue@3.5.24(typescript@5.9.3))
+      '@nuxt/kit': 4.2.1(magicast@0.5.1)
+    transitivePeerDependencies:
+      - magicast
+      - vue
+
   '@bitrix24/b24icons-vue@2.0.6(vue@3.5.24(typescript@5.9.3))':
+    dependencies:
+      vue: 3.5.24(typescript@5.9.3)
+
+  '@bitrix24/b24icons-vue@2.0.7(vue@3.5.24(typescript@5.9.3))':
     dependencies:
       vue: 3.5.24(typescript@5.9.3)
 

@@ -24,7 +24,7 @@ const pagesService = [
 export default defineNuxtConfig({
   modules: [
     '@bitrix24/b24ui-nuxt',
-    // '@bitrix24/b24icons-nuxt',
+    '@bitrix24/b24icons-nuxt',
     '@nuxt/content',
     '@nuxtjs/plausible',
     (_, nuxt) => {
