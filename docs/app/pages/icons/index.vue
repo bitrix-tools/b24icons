@@ -4,14 +4,14 @@ import infoMetaData from '@bitrix24/b24icons-vue/info-metadata.json'
 
 const groups: Ref<GroupRow[]> = ref(infoMetaData.list as unknown as GroupRow[])
 
-const title = ''
+const title = 'Коллекция'
 const prefix = ''
-const description = ''
+const description = 'Иконки для создания приложений в стиле Битрикс24'
 
 useSeoMeta({
-  titleTemplate: `${prefix}%s Bitrix24 Icons`,
+  titleTemplate: `${prefix}%s иконок для Bitrix24`,
   title,
-  ogTitle: `${prefix}${title} Bitrix24 Icons`,
+  ogTitle: `${prefix}${title} иконок для Bitrix24`,
   description,
   ogDescription: description
 })

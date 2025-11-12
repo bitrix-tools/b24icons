@@ -32,9 +32,9 @@ const suffix = page.value?.path.includes('components/') ? 'Component ' : page.va
 const description = page.value?.seo?.description ? page.value.seo.description : page.value?.description
 
 useSeoMeta({
-  titleTemplate: `${prefix}%s ${suffix}- Bitrix24 Icons`,
+  titleTemplate: `${prefix}%s ${suffix}- иконки для Bitrix24`,
   title,
-  ogTitle: `${prefix}${title} ${suffix}- Bitrix24 Icons`,
+  ogTitle: `${prefix}${title} ${suffix}- иконки для Bitrix24`,
   description,
   ogDescription: description
 })
@@ -42,13 +42,13 @@ useSeoMeta({
 const communityLinks = computed(() => [
   {
     icon: DesignIcon,
-    label: 'Edit this page',
+    label: 'Редактировать эту страницу',
     to: `https://github.com/bitrix24/b24ui/edit/main/docs/content/${page?.value?.stem}.md`,
     target: '_blank'
   },
   {
     icon: FavoriteIcon,
-    label: 'Star on GitHub',
+    label: 'Звезда на GitHub',
     to: `https://github.com/bitrix24/b24icons`,
     target: '_blank'
   }
