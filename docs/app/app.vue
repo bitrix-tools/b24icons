@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { withTrailingSlash } from 'ufo'
+import { ru } from '@bitrix24/b24ui-nuxt/locale'
 
 const route = useRoute()
 const appConfig = useAppConfig()
@@ -40,7 +41,7 @@ defineShortcuts({
 </script>
 
 <template>
-  <B24App :toaster="appConfig.toaster">
+  <B24App :toaster="appConfig.toaster" :locale="ru">
     <NuxtLoadingIndicator color="var(--ui-color-design-filled-warning-bg)" :height="3" />
     <div :class="[route.path.startsWith('/docs/') && 'root']">
       <template v-if="!route.path.startsWith('/examples') && !route.path.startsWith('/icons')">
