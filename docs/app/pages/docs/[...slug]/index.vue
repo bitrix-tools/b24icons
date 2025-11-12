@@ -43,7 +43,7 @@ const communityLinks = computed(() => [
   {
     icon: DesignIcon,
     label: 'Редактировать эту страницу',
-    to: `https://github.com/bitrix24/b24ui/edit/main/docs/content/${page?.value?.stem}.md`,
+    to: `https://github.com/bitrix-tools/b24icons/edit/main/docs/content/${page?.value?.stem}.md`,
     target: '_blank'
   },
   {
